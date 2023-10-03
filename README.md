@@ -13,8 +13,9 @@ You need to have Docker installed on your machine.
 It's recommended to pull the Docker image from Dockerhub. Otherwise, if you prefer, you can build your own image using the instructions in the following section. 
 
 ```
-$ docker pull hamedalemo/stac-search-tutorial
-
+$ docker pull hamedalemo/stac-search-tutorial:1.0
+```
+```
 $ docker run -it -p 8888:8888 hamedalemo/stac-search-tutorial
 ```
 
