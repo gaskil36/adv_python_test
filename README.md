@@ -9,15 +9,29 @@ This is part of the course on [Advanced Geospatial Analytics with Python](https:
 You need to have Docker installed on your machine. 
 
 ## Instructions
+
+It's recommended to pull the Docker image from Dockerhub. Otherwise, if you prefer, you can build your own image using the instructions in the following section. 
+
+```
+$ docker pull hamedalemo/stac-search-tutorial
+
+$ docker run -it -p 8888:8888 hamedalemo/stac-search-tutorial
+```
+
+- Copy the Jupyter Lab url and paste it in your browser. 
+- Open `earth_search_tutorial.ipynb` and follow the instructions. 
+
+### Build your own Docker image (optional)
+
 - Clone the repository to your local machine
 - Change directory to the repository's directory on your machine
 - Build the Docker image using the following command:
 ```
-$ docker build -t stac-search .
+$ docker build -t stac-search-tutorial 
 ```
-- Run a container using the following command (this works on Linux (including WSL) and Mac terminals. For Windows machines, make sure to replace $(pwd) with the correct path to the current folder:
+- Run a container using the following command:
 ```
-docker run -it -p 8888:8888 -v $(pwd):/home/jupyteruser stac-search
+$ docker run -it -p 8888:8888 stac-search-tutorial
 ```
 - Copy the Jupyter Lab url and paste it in your browser. 
 - Open `earth_search_tutorial.ipynb` and follow the instructions. 
