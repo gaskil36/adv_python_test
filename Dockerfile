@@ -9,6 +9,7 @@ RUN useradd -m jupyteruser
 USER jupyteruser
 
 WORKDIR /home/jupyteruser
+COPY earth_search_tutorial.ipynb .
 
 # Expose the JupyterLab port
 EXPOSE 8888
