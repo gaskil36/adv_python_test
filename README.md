@@ -16,7 +16,7 @@ It's recommended to pull the Docker image from Dockerhub. Otherwise, if you pref
 docker pull hamedalemo/stac-search-tutorial:1.0
 ```
 ```
-docker run -it -p 8888:8888 hamedalemo/stac-search-tutorial:1.0
+docker run -it -v $(pwd):/home/jupyteruser -p 8888:8888 hamedalemo/stac-search-tutorial:1.0
 ```
 
 - Copy the Jupyter Lab url and paste it in your browser. 
